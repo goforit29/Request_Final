@@ -25,11 +25,11 @@ public class Request {
         // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
 
 
-        try {
-            Thread.sleep((long) (400 + Math.random() * 300));
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep((long) (400 + Math.random() * 300));
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
 
         takbaeyu.external.Payment payment = new takbaeyu.external.Payment();
