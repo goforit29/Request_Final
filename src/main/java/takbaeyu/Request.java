@@ -24,6 +24,14 @@ public class Request {
         //Following code causes dependency to external APIs
         // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
 
+
+        try {
+            Thread.sleep((long) (400 + Math.random() * 300));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
         takbaeyu.external.Payment payment = new takbaeyu.external.Payment();
         // mappings goes here
         payment.setRequestId(this.getId());
