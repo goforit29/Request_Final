@@ -25,11 +25,11 @@ spec:
                 configMapKeyRef:
                   name: apiurl
                   key: url
-            resources:
-              limits:
-                cpu: 500m
-              requests:
-                cpu: 200m
+          resources:
+            limits:
+              cpu: 500m
+            requests:
+              cpu: 200m
           readinessProbe:
             httpGet:
               path: '/actuator/health'
